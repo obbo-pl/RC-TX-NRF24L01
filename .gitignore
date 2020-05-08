@@ -1,7 +1,57 @@
-# For PCBs designed using KiCad: http://www.kicad-pcb.org/
-# Format documentation: http://kicad-pcb.org/help/file-formats/
+# Prerequisites
+*.d
 
-# Temporary files
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# KiCAD backup
 *.000
 *.bak
 *.bck
@@ -13,6 +63,7 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
+*-rescue.*
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -22,5 +73,13 @@ fp-info-cache
 *.ses
 
 # Exported BOM files
+GERBER/
 *.xml
 *.csv
+
+# Atmel Studio 6.2 User-specific files
+*.atsuo
+
+# Atmel Studio 6.2 Build results
+[Dd]ebug/
+
