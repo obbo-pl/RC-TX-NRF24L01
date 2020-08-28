@@ -779,6 +779,10 @@ uint8_t bank_switch(void)
 				BIND_SET_INPUT;
 				BIND_SET_PULLUP;
 			#endif
+			// patch - added delay for correct checking of "BIND" button state
+			uint32_t bind_delay = millis() + 4;
+			while (bind_delay < millis()) {};
+			// 
 			bool test_bind=IS_BIND_BUTTON_on;
 			#ifndef STM32_BOARD
 				if(led)
